@@ -147,6 +147,5 @@ while True:
         if(messageText[0] == '/message'):
             print("Sending the morse code to the room")
             light_morse_code(messageText[1]) 
-
-
-
+            
+            
