@@ -65,7 +65,7 @@ def morse_to_text(morse_code):
                 break
     return text
 
-
+# token scaduto. 
 APIAuthorizationKey = 'Bearer NjY5NmMxMDktNzA3ZC00NDZmLWIyZmItZDI5MDhkZDlkZjliNmM4MGE3MTctYWQ4_PE93_b6f7ca7f-55ce-4df9-855a-8cfebcad253f'
 
 r = requests.get(   "https://api.ciscospark.com/v1/rooms",
@@ -146,6 +146,4 @@ while True:
         messageText = message['text'].split(" ",1)
         if(messageText[0] == '/message'):
             print("Sending the morse code to the room")
-            light_morse_code(messageText[1]) 
-            
-            
+            light_morse_code(messageText[1])
